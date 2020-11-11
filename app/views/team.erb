@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <h1><%= @team_name%></h1>
+    <br>
+    <h2>Team Motto: <%= @team_motto%></h2>
+    <br>
+    <% @team_members.each do |hero, index|%>
+    <h2>Hero Name: <%= hero["name"]%></h2>
+    <br>
+    <p>Hero Power: <%= hero["power"]%></p>
+     <br>
+     <p>Hero Biography: <%= hero["bio"]%></p>
+    <% end%>
 
-
-
+</body>
+</html>
