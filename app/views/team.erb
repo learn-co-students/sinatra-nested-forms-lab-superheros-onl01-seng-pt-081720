@@ -1,3 +1,37 @@
+<div class="team">
+    <h1><%= @team.name %></h1>
+    <h2>Team Motto: <%= @team.motto %></h2>
+</div><br>
+
+<% @heroes.each.with_index do |hero, index| %>
+    <div class="hero">
+        <% if index == 0 %>
+                <h3>Hero Name: <%= hero.name %></h3>
+                <p>Hero Power: <%= hero.power %></p>
+                <p>Hero Biography: <%= hero.biography %></p>
+        <% end %>
+    <% end %>
+</div>
+
+<% @heroes.each.with_index do |hero, index| %>
+    <div class="hero">
+        <% if index == 1 %>
+                <h3>Hero Name: <%= hero.name %></h3>
+                <p>Hero Power: <%= hero.power %></p>
+                <p>Hero Biography: <%= hero.biography %></p>
+        <% end %>
+    <% end %>
+</div>
+
+<% @heroes.each.with_index do |hero, index| %>
+    <div class="hero">
+        <% if index == 2 %>
+                <h3>Hero Name: <%= hero.name %></h3>
+                <p>Hero Power: <%= hero.power %></p>
+                <p>Hero Biography: <%= hero.biography %></p>
+        <% end %>
+    <% end %>
+</div>
 
 
 
