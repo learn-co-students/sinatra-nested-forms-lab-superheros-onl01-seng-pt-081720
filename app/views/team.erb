@@ -4,9 +4,10 @@
     <h1>Team: <%=@team_name%></h1>
     <h1>Team Motto: <%=@team_motto%></h1>
     <%@team_members.each do |member|%>
-    <h2>Hero Name:<%=hero["name"]%></h2>
-    <h2>Hero Power:<%=hero["power"]%></h2>
-    <h2>Hero Biography: <%=hero["bio"]%>
+    
+    <h2>Hero Name: <%=member["name"]%></h2>
+    <h2>Hero Power: <%=member["power"]%></h2>
+    <h2>Hero Biography: <%=member["bio"]%>
     <%end%>
 </body>
 </html>
