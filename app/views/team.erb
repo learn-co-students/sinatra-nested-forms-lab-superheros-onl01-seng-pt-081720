@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html> 
+<body>
+<h1><%= @team.name %></h1>
+<h2>Team Motto: <%= @team.motto %></h2>
 
+
+
+<% @members.each do |mbr| %>
+    <h2>Hero Name: <%= mbr.name %></h2>
+    <h3>
+        Hero Power: <%= mbr.power %><br>
+        Hero Biography: <%= mbr.biography %>
+    </h3>
+<% end %>
+</body>
+</html>
 
 
