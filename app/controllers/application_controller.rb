@@ -1,19 +1,17 @@
 require 'sinatra/base'
+require 'pry'
 
 class App < Sinatra::Base
 
-    configure do
-        set :views, Proc.new { File.join(root, "../views/") }
-    end
+    set :views, Proc.new { File.join(root, "../views/") }
 
     get '/' do
-        erb :index
+        erb :super_hero
     end
 
     post '/teams' do
-        @hash = params
-        binding.pry
+        @params = params[:team]
+        erb :team
     end
-
 
 end
